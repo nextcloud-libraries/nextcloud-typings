@@ -1,0 +1,21 @@
+{
+  "name": "nextcloud-typings",
+  "version": "0.0.0",
+  "description": "Nextcloud TypeScript typings",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nextcloud"
+  ],
+  "author": "Christoph Wurst",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@types/jquery": "^2.0.53"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.2"
+  }
+}
