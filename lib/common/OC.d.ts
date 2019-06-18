@@ -20,10 +20,11 @@ declare namespace Nextcloud.Common {
         filepicker(
             title: string,
             callback: Function,
-            multiselect: boolean,
-            mimeTypeFilter: Array<string>,
-            modal: boolean,
-            type: Number): void;
+            multiselect?: boolean,
+            mimeTypeFilter?: Array<string>,
+            modal?: boolean,
+            type?: Number,
+            path?: string): void;
     }
 
     interface TranslationOptions {
