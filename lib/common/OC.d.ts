@@ -45,6 +45,10 @@ declare namespace Nextcloud.Common {
     }
 
     interface OC {
+        appswebroots: any
+        config: any
+        coreApps: any
+
         requestToken: string
 
         getCurrentUser(): CurrentUser;
@@ -65,6 +69,8 @@ declare namespace Nextcloud.Common {
         dialogs: Dialogs;
         L10N: L10n;
         Notifications: Notifications;
+
+        webroot: string
     }
 
     function humanFileSize(size: Number, skipSmallSizes: boolean): string;
