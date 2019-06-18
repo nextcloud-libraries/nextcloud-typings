@@ -73,6 +73,8 @@ declare namespace Nextcloud.Common {
         webroot: string
     }
 
-    function humanFileSize(size: Number, skipSmallSizes: boolean): string;
+    interface humanFileSize {
+        (size: Number, skipSmallSizes: boolean): string;
+    }
 
 }

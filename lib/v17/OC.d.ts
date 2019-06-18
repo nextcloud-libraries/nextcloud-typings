@@ -6,6 +6,8 @@ declare namespace Nextcloud.v17 {
 
     }
 
-    function humanFileSize(size: Number, skipSmallSizes: boolean): string;
+    interface humanFileSize extends Nextcloud.Common.humanFileSize {
+
+    }
 
 }
