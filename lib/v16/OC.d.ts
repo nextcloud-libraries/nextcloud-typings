@@ -7,6 +7,10 @@ declare namespace Nextcloud.v16 {
 
     }
 
+    interface OCP extends Nextcloud.Common.OCP {
+
+    }
+
     interface humanFileSize extends Nextcloud.Common.humanFileSize {
 
     }

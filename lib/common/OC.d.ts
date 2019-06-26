@@ -75,6 +75,14 @@ declare namespace Nextcloud.Common {
         webroot: string
     }
 
+    interface InitialState {
+        loadState<T>(appId: string, key: string): T
+    }
+
+    interface OCP {
+        InitialState: InitialState
+    }
+
     interface humanFileSize {
         (size: Number, skipSmallSizes: boolean): string;
     }
