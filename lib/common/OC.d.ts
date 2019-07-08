@@ -66,6 +66,7 @@ declare namespace Nextcloud.Common {
         encodePath(path: string): string;
 
         getLocale(): string;
+        getLanguage(): string;
         getCanonicalLocale(): string;
 
         dialogs: Dialogs;
