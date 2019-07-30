@@ -14,7 +14,7 @@
   "author": "Christoph Wurst",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "@types/jquery": "^2.0.53"
+    "@types/jquery": "^3.3.30"
   },
   "devDependencies": {
     "typescript": "^3.5.2"
