@@ -1,6 +1,6 @@
 {
-  "name": "nextcloud-typings",
-  "version": "0.0.10",
+  "name": "@nextcloud/typings",
+  "version": "0.1.0",
   "description": "Nextcloud TypeScript typings",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -17,6 +17,6 @@
     "@types/jquery": "^2.0.53"
   },
   "devDependencies": {
-    "typescript": "^3.5.2"
+    "typescript": "^3.6.3"
   }
 }
