@@ -1,4 +1,6 @@
-# nextcloud-typings
+# @nextcloud/typings
+
+[![Build Status](https://travis-ci.com/nextcloud/nextcloud-typings.svg?branch=master)](https://travis-ci.com/nextcloud/nextcloud-typings)
 
 Versioned typings for the (internal) JavaScript APIs of Nextcloud used in higher level packages.
 
