@@ -19,7 +19,7 @@
     "url": "https://github.com/nextcloud/nextcloud-typings"
   },
   "dependencies": {
-    "@types/jquery": "2.0.53"
+    "@types/jquery": "2.0.54"
   },
   "devDependencies": {
     "babel-jest": "24.9.0",
