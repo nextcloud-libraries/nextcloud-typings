@@ -14,4 +14,8 @@ declare namespace Nextcloud.v18 {
 
     }
 
+    interface WindowWithGlobals extends Nextcloud.Common.DayMonthConstants, Window {
+
+    }
+
 }
