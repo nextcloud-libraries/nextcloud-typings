@@ -88,4 +88,13 @@ declare namespace Nextcloud.Common {
         (size: Number, skipSmallSizes: boolean): string;
     }
 
+    interface DayMonthConstants {
+        firstDay: number
+        dayNames: String[]
+        dayNamesShort: String[]
+        dayNamesMin: String[]
+        monthNames: String[]
+        monthNamesShort: String[]
+    }
+
 }
