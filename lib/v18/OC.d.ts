@@ -2,7 +2,7 @@
 
 declare namespace Nextcloud.v18 {
 
-    interface OC extends Nextcloud.Common.OC {
+    interface OC extends Nextcloud.v17.OC {
 
     }
 
