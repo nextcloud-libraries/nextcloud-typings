@@ -28,7 +28,7 @@ declare namespace Nextcloud.Common {
     }
 
     interface TranslationOptions {
-        escaped?: boolean
+        escape?: boolean
     }
     interface L10n {
         translate(app: string, text: string, vars?: object, count?: number, options?: TranslationOptions): string;
