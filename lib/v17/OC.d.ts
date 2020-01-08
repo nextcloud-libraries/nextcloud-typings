@@ -5,10 +5,10 @@ declare namespace Nextcloud.v17 {
     }
 
     interface Dialogs {
-        FILEPICKER_TYPE_CHOOSE: Number;
-        FILEPICKER_TYPE_MOVE: Number;
-        FILEPICKER_TYPE_COPY: Number;
-        FILEPICKER_TYPE_COPY_MOVE: Number;
+        FILEPICKER_TYPE_CHOOSE: number;
+        FILEPICKER_TYPE_MOVE: number;
+        FILEPICKER_TYPE_COPY: number;
+        FILEPICKER_TYPE_COPY_MOVE: number;
 
         filepicker(
             title: string,
@@ -16,7 +16,7 @@ declare namespace Nextcloud.v17 {
             multiselect?: boolean,
             mimeTypeFilter?: Array<string>,
             modal?: boolean,
-            type?: Number,
+            type?: number,
             path?: string,
             options?: FilePickerOptions): void;
     }
@@ -34,9 +34,9 @@ declare namespace Nextcloud.v17 {
         linkTo(app: string, file: string): string;
         linkToRemoteBase(service: string): string;
         linkToRemote(service: string): string;
-        linkToOCS(service: string, version: Number): string;
+        linkToOCS(service: string, version: number): string;
 
-        generateUrl(url: string, params?: Object, options?: Nextcloud.Common.UrlOptions): string;
+        generateUrl(url: string, params?: object, options?: Nextcloud.Common.UrlOptions): string;
         filePath(app: string, type: string, file: string): string;
         imagePath(app: string, file: string): string;
         encodePath(path: string): string;
