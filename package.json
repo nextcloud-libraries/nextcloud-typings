@@ -23,8 +23,8 @@
     "@types/jquery": "2.0.54"
   },
   "devDependencies": {
-    "babel-jest": "25.1.0",
-    "jest": "25.1.0",
-    "typescript": "3.8.3"
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0",
+    "typescript": "^3.8.3"
   }
 }

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.1.7 - 2020-03-19
+### Changed
+- Dependency updates
+### Fixed
+- Update vulnerable packages
+
 ## 0.1.6 - 2020-01-08
 ### Fixed
 - Translate option is named 'escape' not 'escaped'
