@@ -53,6 +53,7 @@ declare namespace Nextcloud.Common {
         requestToken: string
 
         getCurrentUser(): CurrentUser;
+        isUserAdmin(): boolean;
 
         getRootPath(): string;
         linkTo(app: string, file: string): string;
