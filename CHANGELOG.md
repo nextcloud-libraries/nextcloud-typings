@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.2.0 - 2020-06-03
+### Changed
+- Nextcloud 19 typings added
+- Dependency updates
+
 ## 0.1.7 - 2020-03-19
 ### Changed
 - Dependency updates
