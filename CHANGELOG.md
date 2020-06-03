@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.2.1 - 2020-06-03
+### Fixed
+- Packaging of v0.2.0 files
+
 ## 0.2.0 - 2020-06-03
 ### Changed
 - Nextcloud 19 typings added
