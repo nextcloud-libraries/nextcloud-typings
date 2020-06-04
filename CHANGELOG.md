@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.2.1 - 2020-06-04
+### Fixed
+- Missing isUserAdmin in v17 and later
+
 ## 0.2.1 - 2020-06-03
 ### Fixed
 - Packaging of v0.2.0 files
