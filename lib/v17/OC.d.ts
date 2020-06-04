@@ -29,6 +29,7 @@ declare namespace Nextcloud.v17 {
         requestToken: string
 
         getCurrentUser(): Nextcloud.Common.CurrentUser;
+        isUserAdmin(): boolean;
 
         getRootPath(): string;
         linkTo(app: string, file: string): string;
