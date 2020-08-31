@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.0 - 2020-08-31
+### Added
+- Nextcloud 20 typings
+
 ## 0.2.4 - 2020-08-31
 ### Fixed
 - Release build
