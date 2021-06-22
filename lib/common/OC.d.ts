@@ -45,6 +45,18 @@ declare namespace Nextcloud.Common {
         showTemporary(text: string, options?: NotificationOptions): JQuery;
     }
 
+    interface PasswordConfirmationOptions {
+        title: string
+        text: string
+        confirm: string
+        label: string
+        error: string
+    }
+    interface PasswordConfirmation {
+        requiresPasswordConfirmation(): boolean
+        requirePasswordConfirmation(callback?: () => void, options?: PasswordConfirmationOptions, rejectCallback?: () => void): void
+    }
+
     interface OC {
         appswebroots: any
         config: any
@@ -73,6 +85,7 @@ declare namespace Nextcloud.Common {
         dialogs: Dialogs;
         L10N: L10n;
         Notifications: Notifications;
+        PasswordConfirmation: PasswordConfirmation;
 
         webroot: string
     }
