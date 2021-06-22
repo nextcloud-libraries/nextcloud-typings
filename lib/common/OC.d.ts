@@ -46,11 +46,11 @@ declare namespace Nextcloud.Common {
     }
 
     interface PasswordConfirmationOptions {
-        title: string
-        text: string
-        confirm: string
-        label: string
-        error: string
+        title?: string
+        text?: string
+        confirm?: string
+        label?: string
+        error?: string
     }
     interface PasswordConfirmation {
         requiresPasswordConfirmation(): boolean
