@@ -9,7 +9,7 @@ Versioned typings for the (internal) JavaScript APIs of Nextcloud used in higher
 You can use this package to verify your API usage is compatible with a range of Nextcloud versions
 
 ```ts
-/// <reference types="nextcloud-typings" />
+/// <reference types="@nextcloud/typings" />
 
 declare var OC: Nextcloud.v17.OC | Nextcloud.v18.OC | Nextcloud.v19.OC | Nextcloud.v20.OC;
 
