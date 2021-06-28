@@ -11,7 +11,7 @@ You can use this package to verify your API usage is compatible with a range of 
 ```ts
 /// <reference types="@nextcloud/typings" />
 
-declare var OC: Nextcloud.v18.OC | Nextcloud.v19.OC | Nextcloud.v20.OC | Nextcloud.v21.OC;
+declare var OC: Nextcloud.v19.OC | Nextcloud.v20.OC | Nextcloud.v21.OC | Nextcloud.v22.OC;
 
 OC.L10N.translate("app", "text")
 ```
