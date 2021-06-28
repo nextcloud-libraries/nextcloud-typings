@@ -1,6 +1,6 @@
 {
   "name": "@nextcloud/typings",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Nextcloud TypeScript typings",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -14,6 +14,16 @@
   ],
   "homepage": "https://github.com/nextcloud/nextcloud-typings#readme",
   "author": "Christoph Wurst",
+  "contributors": [
+    {
+      "name": "Christoph Wurst",
+      "email": "christoph@winzerhof-wurst.at"
+    },
+    {
+      "name": "Christopher Ng",
+      "email": "chrng8@gmail.com"
+    }
+  ],
   "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",

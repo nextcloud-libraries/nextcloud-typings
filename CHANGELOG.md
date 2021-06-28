@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.2.0 - 2021-06-28
+### Added
+- Nextcloud 21 typings
+- Nextcloud 22 typings
+
 ## 1.0.0 - 2020-08-31
 ### Added
 - Nextcloud 20 typings
