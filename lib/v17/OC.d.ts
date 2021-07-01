@@ -21,7 +21,7 @@ declare namespace Nextcloud.v17 {
             options?: FilePickerOptions): void;
     }
 
-    interface OC {
+    interface OC extends Nextcloud.v16.OC {
         appswebroots: any
         config: any
         coreApps: any
