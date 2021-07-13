@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.2.1 - 2021-07-05
+### Fixed
+- Typings aren't propagated from Nextcloud.Common
+
 ## 1.2.0 - 2021-06-29
 ### Added
 - Nextcloud 21 typings
