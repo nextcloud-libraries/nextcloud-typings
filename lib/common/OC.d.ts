@@ -57,6 +57,41 @@ declare namespace Nextcloud.Common {
         requirePasswordConfirmation(callback?: () => void, options?: PasswordConfirmationOptions, rejectCallback?: () => void): void
     }
 
+    interface Files {
+        FileInfo: FileInfo,
+    }
+
+    enum Permission {
+        None = 0,
+        Create = 4,
+        Read = 1,
+        Update = 2,
+        Delete = 8,
+        Share = 16,
+        All = 31,
+    }
+
+    interface FileInfo {
+         id?: number
+         name?: string
+         /**
+          * Absolute path of the containing directory
+          */
+         path?: string
+         mimetype?: string
+         /**
+          * URL which overrides the mime type icon
+          */
+         icon?: string
+         permissions?: Permission
+         mtime?: number
+         etag?: string
+         mountType?: 'external-root' | 'shared' | 'shared-root'
+         hasPreview: boolean
+         sharePermissions?: Permission
+         quotaAvailableBytes: number
+     }
+
     interface OC {
         appswebroots: any
         config: any
@@ -86,6 +121,7 @@ declare namespace Nextcloud.Common {
         L10N: L10n;
         Notifications: Notifications;
         PasswordConfirmation: PasswordConfirmation;
+        Files: Files;
 
         webroot: string
     }
@@ -110,5 +146,4 @@ declare namespace Nextcloud.Common {
         monthNames: string[]
         monthNamesShort: string[]
     }
-
 }
