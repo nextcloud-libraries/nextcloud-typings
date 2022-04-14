@@ -2,6 +2,8 @@
 
 declare namespace Nextcloud.Common {
 
+    type Nullable<T> = null | T
+
     interface CurrentUser {
         uid: string | false,
         displayName: string | null,
@@ -72,23 +74,23 @@ declare namespace Nextcloud.Common {
     }
 
     interface FileInfo {
-         id?: number
-         name?: string
+         id: Nullable<number>
+         name: Nullable<string>
          /**
           * Absolute path of the containing directory
           */
-         path?: string
-         mimetype?: string
+         path: Nullable<string>
+         mimetype: Nullable<string>
          /**
           * URL which overrides the mime type icon
           */
-         icon?: string
-         permissions?: Permission
-         mtime?: number
-         etag?: string
-         mountType?: 'external-root' | 'shared' | 'shared-root'
+         icon: Nullable<string>
+         permissions: Nullable<Permission>
+         mtime: Nullable<number>
+         etag: Nullable<string>
+         mountType: Nullable<'external-root' | 'shared' | 'shared-root'>
          hasPreview: boolean
-         sharePermissions?: Permission
+         sharePermissions: Nullable<Permission>
          quotaAvailableBytes: number
      }
 
