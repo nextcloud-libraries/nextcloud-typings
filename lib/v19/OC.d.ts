@@ -2,8 +2,12 @@
 
 declare namespace Nextcloud.v19 {
 
-    interface OC extends Nextcloud.v18.OC {
-
+    type OC = Nextcloud.v18.OC & {
+        Files: {
+            FileInfo: {
+                quotaAvailableBytes: number
+            }
+        }
     }
 
     interface OCP extends Nextcloud.v18.OCP {

@@ -60,7 +60,7 @@ declare namespace Nextcloud.Common {
     }
 
     interface Files {
-        FileInfo: FileInfo,
+        FileInfo: FileInfo
     }
 
     enum Permission {
@@ -91,7 +91,6 @@ declare namespace Nextcloud.Common {
          mountType: Nullable<'external-root' | 'shared' | 'shared-root'>
          hasPreview: boolean
          sharePermissions: Nullable<Permission>
-         quotaAvailableBytes: number
      }
 
     interface OC {
