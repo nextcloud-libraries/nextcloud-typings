@@ -3,7 +3,7 @@ declare namespace Nextcloud.v24 {
     // TODO check for additions to OC and OCP in v24
 
     interface FilePickerOptions extends Nextcloud.v17.FilePickerOptions {
-        filter: (entry: Nextcloud.Common.FileInfo) => boolean
+        filter: (entry: Nextcloud.v19.FileInfo) => boolean
     }
 
     type OC = Nextcloud.v23.OC & {
