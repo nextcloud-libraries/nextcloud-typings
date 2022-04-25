@@ -2,6 +2,8 @@
 
 declare namespace Nextcloud.Common {
 
+    type Nullable<T> = null | T
+
     interface CurrentUser {
         uid: string | false,
         displayName: string | null,
@@ -57,6 +59,40 @@ declare namespace Nextcloud.Common {
         requirePasswordConfirmation(callback?: () => void, options?: PasswordConfirmationOptions, rejectCallback?: () => void): void
     }
 
+    interface Files {
+        FileInfo: FileInfo
+    }
+
+    enum Permission {
+        None = 0,
+        Create = 4,
+        Read = 1,
+        Update = 2,
+        Delete = 8,
+        Share = 16,
+        All = 31,
+    }
+
+    interface FileInfo {
+         id: Nullable<number>
+         name: Nullable<string>
+         /**
+          * Absolute path of the containing directory
+          */
+         path: Nullable<string>
+         mimetype: Nullable<string>
+         /**
+          * URL which overrides the mime type icon
+          */
+         icon: Nullable<string>
+         permissions: Nullable<Permission>
+         mtime: Nullable<number>
+         etag: Nullable<string>
+         mountType: Nullable<'external-root' | 'shared' | 'shared-root'>
+         hasPreview: boolean
+         sharePermissions: Nullable<Permission>
+     }
+
     interface OC {
         appswebroots: any
         config: any
@@ -86,6 +122,7 @@ declare namespace Nextcloud.Common {
         L10N: L10n;
         Notifications: Notifications;
         PasswordConfirmation: PasswordConfirmation;
+        Files: Files;
 
         webroot: string
     }
@@ -110,5 +147,4 @@ declare namespace Nextcloud.Common {
         monthNames: string[]
         monthNamesShort: string[]
     }
-
 }
