@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.4.0 – 2022-04-26
+### Added
+- Nextcloud 24 typings
+- FileInfo types
+
 ## 1.3.0 – 2021-12-07
 ### Added
 - Nextcloud 23 typings
