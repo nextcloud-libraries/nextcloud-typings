@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.4.1 – 2022-04-27
+### Fixed
+- Reference Nextcloud 24 typings correctly
+
 ## 1.4.0 – 2022-04-26
 ### Added
 - Nextcloud 24 typings
