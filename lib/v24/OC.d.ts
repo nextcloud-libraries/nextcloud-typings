@@ -1,7 +1,9 @@
 declare namespace Nextcloud.v24 {
 
+    type FilePickerFilter = (entry: Nextcloud.v19.FileInfo) => boolean
+
     interface FilePickerOptions extends Nextcloud.v17.FilePickerOptions {
-        filter: (entry: Nextcloud.v19.FileInfo) => boolean
+        filter: FilePickerFilter
     }
 
     type OC = Nextcloud.v23.OC & {
