@@ -22,11 +22,13 @@ declare namespace Nextcloud.v17 {
     }
 
     interface OC extends Nextcloud.v16.OC {
-        appswebroots: any
-        config: any
-        coreApps: any
+        appswebroots: any;
+        config: any;
+        coreApps: any;
 
-        requestToken: string
+        debug: boolean;
+
+        requestToken: string;
 
         getCurrentUser(): Nextcloud.Common.CurrentUser;
         isUserAdmin(): boolean;
