@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.4.3 – 2022-06-14
+### Fixed
+- Missing `OC.debug` for v17+
+
 ## 1.4.2 – 2022-04-29
 ### Added
 - Extract FilePickerFilter type to be available in v24 namespace
