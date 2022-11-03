@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.5.0 – 2022-11-03
+### Added
+- Nextcloud 25 typings
+### Changed
+- Dependency updates
+
 ## 1.4.3 – 2022-06-14
 ### Fixed
 - Missing `OC.debug` for v17+
