@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## TBD
+### Fixed
+- Added missing `OC.Plugins` for all version
+
 ## 1.5.0 – 2022-11-03
 ### Added
 - Nextcloud 25 typings
