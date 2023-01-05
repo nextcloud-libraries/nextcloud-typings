@@ -2,9 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
-## TBD
+## 1.5.1 - 2023-01-06
 ### Fixed
 - Added missing `OC.Plugins` for all version
+- Fix exporting typings for NC25
+### Changed
+- Dependency updates
 
 ## 1.5.0 – 2022-11-03
 ### Added
