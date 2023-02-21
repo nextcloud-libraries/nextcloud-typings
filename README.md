@@ -1,6 +1,7 @@
 # @nextcloud/typings
-
-[![Build Status](https://travis-ci.com/nextcloud/nextcloud-typings.svg?branch=master)](https://travis-ci.com/nextcloud/nextcloud-typings)
+[![NPM package](https://img.shields.io/npm/v/@nextcloud/typings?style=for-the-badge)](https://www.npmjs.com/package/@nextcloud/typings)
+[![License](https://img.shields.io/npm/l/@nextcloud/typings?color=green&style=for-the-badge)](https://github.com/nextcloud/nextcloud-typings/blob/master/LICENSE)
+[![Open issues](https://img.shields.io/github/issues-raw/nextcloud/nextcloud-typings?style=for-the-badge)](https://github.com/nextcloud/nextcloud-typings/issues)
 
 Versioned typings for the (internal) JavaScript APIs of Nextcloud used in higher level packages.
 
