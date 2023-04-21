@@ -5,6 +5,14 @@
 
 Versioned typings for the (internal) JavaScript APIs of Nextcloud used in higher level packages.
 
+## Installation
+
+```sh
+npm i -S @nextcloud/typings
+```
+
+The typings have to be in the ``dependencies`` section, not ``devDependencies``. See https://www.typescriptlang.org/docs/handbook/declaration-files/publishing.html#dependencies for details.
+
 ## Usage
 
 You can use this package to verify your API usage is compatible with a range of Nextcloud versions
