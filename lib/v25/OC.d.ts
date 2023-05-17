@@ -1,9 +1,8 @@
 declare namespace Nextcloud.v25 {
 
-    type FilePickerFilter = Nextcloud.v24.FilePickerFilter
-
-    interface FilePickerOptions extends Nextcloud.v24.FilePickerOptions {
-
+    interface Accessibility {
+        /** Whether the user opted-out of shortcuts so that they should not be registered */
+        disableKeyboardShortcuts(): boolean
     }
 
     interface OC extends Nextcloud.v24.OC {
@@ -11,7 +10,7 @@ declare namespace Nextcloud.v25 {
     }
 
     interface OCP extends Nextcloud.v24.OCP {
-
+        Accessibility: Accessibility
     }
 
     interface WindowWithGlobals extends Nextcloud.Common.DayMonthConstants, Window {
