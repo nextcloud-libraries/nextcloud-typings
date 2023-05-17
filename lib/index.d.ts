@@ -8,3 +8,4 @@
 /// <reference path="v23/OC.d.ts" />
 /// <reference path="v24/OC.d.ts" />
 /// <reference path="v25/OC.d.ts" />
+/// <reference path="v26/OC.d.ts" />
