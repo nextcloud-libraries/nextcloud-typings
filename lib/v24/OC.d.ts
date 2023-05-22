@@ -6,7 +6,7 @@ declare namespace Nextcloud.v24 {
         filter: FilePickerFilter
     }
 
-    type OC = Nextcloud.v23.OC & {
+    type OC = Omit<Nextcloud.v23.OC, 'Util'> & {
         dialogs: {
             filepicker(
                 title: string,
@@ -19,6 +19,9 @@ declare namespace Nextcloud.v24 {
                 options?: FilePickerOptions,
             ): void
         }
+
+        // OC.Util.isIE was dropped
+        Util: Omit<Nextcloud.v23.OC["Util"], 'isIE'>;
     }
 
     interface OCP extends Nextcloud.v23.OCP {
