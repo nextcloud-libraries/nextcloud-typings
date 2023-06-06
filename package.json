@@ -30,7 +30,8 @@
     "url": "https://github.com/nextcloud/nextcloud-typings"
   },
   "dependencies": {
-    "@types/jquery": "3.5.16"
+    "@types/jquery": "3.5.16",
+    "vue-router": "<4"
   },
   "devDependencies": {
     "babel-jest": "^29.5.0",
