@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.7.0 - 2023-06-13
+### Added
+- Added typings for `OC.Util` (all versions)
+- Added typings for `OCP.Accessibility` (Nextcloud 25+)
+- Added namespace for Nextcloud 26
+- Added namespace for Nextcloud 27
+  - Including typings for new `OCP.Files.Router` API
+### Changed
+- Dependency updates
+
 ## 1.6.0 - 2023-01-06
 ### Added
 - Added missing `OC.Plugins` for all version
