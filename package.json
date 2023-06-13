@@ -1,6 +1,6 @@
 {
   "name": "@nextcloud/typings",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Nextcloud TypeScript typings",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
