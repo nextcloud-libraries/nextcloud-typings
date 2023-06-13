@@ -10,8 +10,12 @@
             "dom"
         ]
     },
+    "include": [
+        "lib"
+    ],
     "exclude": [
+        "dist",
         "node_modules",
-        "dist"
+        "test"
     ]
 }
