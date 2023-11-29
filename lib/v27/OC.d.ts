@@ -1,4 +1,4 @@
-import { Route } from "vue-router";
+import type { Route } from 'vue-router'
 
 declare global {
     namespace Nextcloud.v27 {
