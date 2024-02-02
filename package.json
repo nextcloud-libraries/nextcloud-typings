@@ -4,6 +4,10 @@
   "description": "Nextcloud TypeScript typings",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.d.ts",
+    "./types": "./dist/types.d.ts"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -31,13 +35,13 @@
   },
   "dependencies": {
     "@types/jquery": "3.5.16",
-    "vue": "^2.7.14",
+    "vue": "^2.7.15",
     "vue-router": "<4"
   },
   "devDependencies": {
     "babel-jest": "^29.5.0",
     "jest": "^29.5.0",
-    "typescript": "^5.1.6"
+    "typescript": "^5.3.2"
   },
   "engines": {
     "node": "^20.0.0",
