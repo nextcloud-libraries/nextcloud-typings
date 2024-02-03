@@ -6,7 +6,7 @@
   "typings": "dist/index.d.ts",
   "exports": {
     ".": "./dist/index.d.ts",
-    "./types": "./dist/types.d.ts"
+    "./ocs": "./dist/ocs.d.ts"
   },
   "scripts": {
     "build": "tsc",
