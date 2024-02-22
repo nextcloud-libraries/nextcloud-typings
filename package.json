@@ -5,8 +5,12 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "exports": {
-    ".": "./dist/index.d.ts",
-    "./ocs": "./dist/ocs.d.ts"
+    ".": {
+      "types": "./dist/index.d.ts"
+    },
+    "./ocs": {
+      "types": "./dist/ocs.d.ts"
+    }
   },
   "scripts": {
     "build": "tsc",
