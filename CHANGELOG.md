@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.8.0 - 2024-02-23
+### Added
+* enh: Add typings for Nextcloud 28
+* enh: Provide `@nextcloud/typings/ocs` for `OCSResult` type
+
+### Fixed
+* fix: Remove unused travis and renovate config
+* fix: Adjust `OCP.Files` types for `Navigation` and `Router`
+* fix: Use correct exported name `/ocs` instead of `/types`
+
+### Changes
+* chore: update node engines to next LTS (Node 20 + NPM 10)
+* Dependency updates
+
 ## 1.7.0 - 2023-06-13
 ### Added
 - Added typings for `OC.Util` (all versions)
