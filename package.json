@@ -39,8 +39,7 @@
   },
   "dependencies": {
     "@types/jquery": "3.5.16",
-    "vue": "^2.7.15",
-    "vue-router": "<4"
+    "vue-router3": "npm:vue-router@^3"
   },
   "devDependencies": {
     "babel-jest": "^29.5.0",
