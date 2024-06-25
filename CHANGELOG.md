@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.9.0 - 2024-06-25
+### Added
+* feat: Add type information for Nextcloud 29
+
+### Fixed
+* fix: Do not depend on vue or vue-router for the public interface of `OC.Files.Router`
+* fix: Add types for missing `OC` constants
+
+### Changed
+* chore(deps-dev): Bump typescript to 5.5.2
+* chore(deps-dev): Bump braces 3.0.3
+
 ## 1.8.0 - 2024-02-23
 ### Added
 * enh: Add typings for Nextcloud 28
