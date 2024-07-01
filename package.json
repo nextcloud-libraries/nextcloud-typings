@@ -14,16 +14,19 @@
   },
   "license": "GPL-3.0-or-later",
   "author": "Nextcloud GmbH and Nextcloud contributors",
+  "type": "module",
   "exports": {
     ".": {
       "types": "./lib/index.d.ts"
     },
     "./ocs": {
       "types": "./lib/ocs.d.ts"
+    },
+    "./Nextcloud*": {
+      "types": "./lib/Nextcloud*/index.d.ts"
     }
   },
-  "main": "dist/index.js",
-  "typings": "lib/index.d.ts",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "eslint",
