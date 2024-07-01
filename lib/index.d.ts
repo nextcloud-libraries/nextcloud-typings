@@ -1,14 +1,10 @@
-/// <reference path="v16/OC.d.ts" />
-/// <reference path="v17/OC.d.ts" />
-/// <reference path="v18/OC.d.ts" />
-/// <reference path="v19/OC.d.ts" />
-/// <reference path="v20/OC.d.ts" />
-/// <reference path="v21/OC.d.ts" />
-/// <reference path="v22/OC.d.ts" />
-/// <reference path="v23/OC.d.ts" />
-/// <reference path="v24/OC.d.ts" />
-/// <reference path="v25/OC.d.ts" />
-/// <reference path="v26/OC.d.ts" />
-/// <reference path="v27/OC.d.ts" />
-/// <reference path="v28/OC.d.ts" />
-/// <reference path="v29/OC.d.ts" />
+/*!
+ * SPDX-FileCopyrightText: 2019-2024 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
+export type * as Nextcloud28 from './Nextcloud28/index.d.ts'
+export type * as Nextcloud29 from './Nextcloud29/index.d.ts'
+
+// Remember to also bump this on relase
+export type * as NextcloudLatest from './Nextcloud29/index.d.ts'

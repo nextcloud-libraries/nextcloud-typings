@@ -2,16 +2,19 @@
   "name": "@nextcloud/typings",
   "version": "1.9.0",
   "description": "Nextcloud TypeScript typings",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts"
+      "types": "./lib/index.d.ts"
     },
     "./ocs": {
-      "types": "./dist/ocs.d.ts"
+      "types": "./lib/ocs.d.ts"
+    },
+    "./Nextcloud*": {
+      "types": "./lib/Nextcloud*/index.d.ts"
     }
   },
+  "typings": "lib/index.d.ts",
   "scripts": {
     "format": "prettier -c .",
     "format:fix": "prettier -w .",
