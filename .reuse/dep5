@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Nextcloud typings
+Upstream-Contact: Nextcloud GmbH <https://nextcloud.com/impressum/>
+Source: https://github.com/nextcloud-libraries/nextcloud-typings
+
+Files: package.json package-lock.json
+Copyright: 2019-2024 Nextcloud GmbH and Nextcloud contributors
+License: GPL-3.0-or-later
+
+Files: tsconfig.json
+Copyright: 2019-2024 Nextcloud GmbH and Nextcloud contributors
+License: CC0-1.0

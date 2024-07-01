@@ -2,121 +2,210 @@
 
 All notable changes to this project will be documented in this file.
 
-## 1.9.0 - 2024-06-25
-### Added
-* feat: Add type information for Nextcloud 29
+<!--
+ - SPDX-FileCopyrightText: 2019-2024 Nextcloud GmbH and Nextcloud contributors
+ - SPDX-License-Identifier: GPL-3.0-or-later
+-->
 
-### Fixed
-* fix: Do not depend on vue or vue-router for the public interface of `OC.Files.Router`
-* fix: Add types for missing `OC` constants
+## 2.0.0
+
+### BREAKING
+
+The package now uses modules instead of namespaces, instead of:
+
+```ts
+/// <reference types="@nextcloud/typings" />
+declare var OC: Nextcloud.v28.OC | Nextcloud.v29.OC
+```
+
+You now have to import the types like:
+
+```ts
+import type { Nextcloud28, Nextcloud29 } from '@nextcloud/typings'
+declare var OC: Nextcloud28.OC | Nextcloud29.OC
+```
+
+### Added
+
+-   There is a `NextcloudLatest` alias for the currently latest version if you want to always support the bleeding edge of Nextcloud.
 
 ### Changed
-* chore(deps-dev): Bump typescript to 5.5.2
-* chore(deps-dev): Bump braces 3.0.3
+
+-   This package now is a native ES module
+-   Old versions were consolidated into Nextcloud 28 (currently the oldest supported version)
+-   Types are provided as modules instead of namespaces
+
+## 1.9.0 - 2024-06-25
+
+### Added
+
+-   feat: Add type information for Nextcloud 29
+
+### Fixed
+
+-   fix: Do not depend on vue or vue-router for the public interface of `OC.Files.Router`
+-   fix: Add types for missing `OC` constants
+
+### Changed
+
+-   chore(deps-dev): Bump typescript to 5.5.2
+-   chore(deps-dev): Bump braces 3.0.3
 
 ## 1.8.0 - 2024-02-23
+
 ### Added
-* enh: Add typings for Nextcloud 28
-* enh: Provide `@nextcloud/typings/ocs` for `OCSResult` type
+
+-   enh: Add typings for Nextcloud 28
+-   enh: Provide `@nextcloud/typings/ocs` for `OCSResult` type
 
 ### Fixed
-* fix: Remove unused travis and renovate config
-* fix: Adjust `OCP.Files` types for `Navigation` and `Router`
-* fix: Use correct exported name `/ocs` instead of `/types`
+
+-   fix: Remove unused travis and renovate config
+-   fix: Adjust `OCP.Files` types for `Navigation` and `Router`
+-   fix: Use correct exported name `/ocs` instead of `/types`
 
 ### Changes
-* chore: update node engines to next LTS (Node 20 + NPM 10)
-* Dependency updates
+
+-   chore: update node engines to next LTS (Node 20 + NPM 10)
+-   Dependency updates
 
 ## 1.7.0 - 2023-06-13
+
 ### Added
-- Added typings for `OC.Util` (all versions)
-- Added typings for `OCP.Accessibility` (Nextcloud 25+)
-- Added namespace for Nextcloud 26
-- Added namespace for Nextcloud 27
-  - Including typings for new `OCP.Files.Router` API
+
+-   Added typings for `OC.Util` (all versions)
+-   Added typings for `OCP.Accessibility` (Nextcloud 25+)
+-   Added namespace for Nextcloud 26
+-   Added namespace for Nextcloud 27
+    -   Including typings for new `OCP.Files.Router` API
+
 ### Changed
-- Dependency updates
+
+-   Dependency updates
 
 ## 1.6.0 - 2023-01-06
+
 ### Added
-- Added missing `OC.Plugins` for all version
+
+-   Added missing `OC.Plugins` for all version
+
 ### Fixed
-- Fix exporting typings for NC25
+
+-   Fix exporting typings for NC25
+
 ### Changed
-- Dependency updates
+
+-   Dependency updates
 
 ## 1.5.0 – 2022-11-03
+
 ### Added
-- Nextcloud 25 typings
+
+-   Nextcloud 25 typings
+
 ### Changed
-- Dependency updates
+
+-   Dependency updates
 
 ## 1.4.3 – 2022-06-14
+
 ### Fixed
-- Missing `OC.debug` for v17+
+
+-   Missing `OC.debug` for v17+
 
 ## 1.4.2 – 2022-04-29
+
 ### Added
-- Extract FilePickerFilter type to be available in v24 namespace
+
+-   Extract FilePickerFilter type to be available in v24 namespace
 
 ## 1.4.1 – 2022-04-27
+
 ### Fixed
-- Reference Nextcloud 24 typings correctly
+
+-   Reference Nextcloud 24 typings correctly
 
 ## 1.4.0 – 2022-04-26
+
 ### Added
-- Nextcloud 24 typings
-- FileInfo types
+
+-   Nextcloud 24 typings
+-   FileInfo types
 
 ## 1.3.0 – 2021-12-07
+
 ### Added
-- Nextcloud 23 typings
+
+-   Nextcloud 23 typings
 
 ## 1.2.1 - 2021-07-05
+
 ### Fixed
-- Typings aren't propagated from Nextcloud.Common
+
+-   Typings aren't propagated from Nextcloud.Common
 
 ## 1.2.0 - 2021-06-29
+
 ### Added
-- Nextcloud 21 typings
-- Nextcloud 22 typings
+
+-   Nextcloud 21 typings
+-   Nextcloud 22 typings
 
 ## 1.0.0 - 2020-08-31
+
 ### Added
-- Nextcloud 20 typings
+
+-   Nextcloud 20 typings
 
 ## 0.2.4 - 2020-08-31
+
 ### Fixed
-- Release build
+
+-   Release build
 
 ## 0.2.3 - 2020-08-31
+
 ### Changed
-- Dependency updates
+
+-   Dependency updates
 
 ## 0.2.2 - 2020-06-04
+
 ### Fixed
-- Missing isUserAdmin in v17 and later
+
+-   Missing isUserAdmin in v17 and later
 
 ## 0.2.1 - 2020-06-03
+
 ### Fixed
-- Packaging of v0.2.0 files
+
+-   Packaging of v0.2.0 files
 
 ## 0.2.0 - 2020-06-03
+
 ### Changed
-- Nextcloud 19 typings added
-- Dependency updates
+
+-   Nextcloud 19 typings added
+-   Dependency updates
 
 ## 0.1.7 - 2020-03-19
+
 ### Changed
-- Dependency updates
+
+-   Dependency updates
+
 ### Fixed
-- Update vulnerable packages
+
+-   Update vulnerable packages
 
 ## 0.1.6 - 2020-01-08
+
 ### Fixed
-- Translate option is named 'escape' not 'escaped'
+
+-   Translate option is named 'escape' not 'escaped'
 
 ## 0.1.5 - 2020-01-08
+
 ### Fixed
-- Use of upper case primitive types change to lower case
+
+-   Use of upper case primitive types change to lower case
