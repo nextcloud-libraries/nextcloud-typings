@@ -35,7 +35,7 @@ declare namespace Nextcloud.v27 {
 		 * @see https://v3.router.vuejs.org/guide/essentials/navigation.html
 		 */
 		goToRoute(
-			name?: string,
+			name?: string | null,
 			params?: Record<string, string>,
 			query?: Record<string, string | (string | null)[] | null | undefined>,
 			replace?: boolean,
