@@ -116,6 +116,21 @@ declare namespace Nextcloud.v28 {
 		views: View[]
 	}
 
+	interface FilesRouter extends Nextcloud.v27.FilesRouter {
+		/**
+		 * Name of the current route
+		 */
+		readonly name: string | null | undefined
+		/**
+		 * Query options of the current route
+		 */
+		readonly query: Nextcloud.v27.Dictionary<string | (string | null)[] | null | undefined>
+		/**
+		 * Params of the current route
+		 */
+		readonly params: Nextcloud.v27.Dictionary<string>
+	}
+
 	interface OC extends Omit<Nextcloud.v27.OC, 'appSettings'|'addScript'|'addStyle'> {
 		/**
 		 * 'appSettings', 'addScript', and 'addStyle' were removed in Nextcloud 28
@@ -124,7 +139,7 @@ declare namespace Nextcloud.v28 {
 
 	interface OCP extends Omit<Nextcloud.v27.OCP, 'Files'> {
 		Files: {
-			Router: Nextcloud.v27.FilesRouter
+			Router: FilesRouter
 			Navigation: FilesNavigation
 		}
 	}
