@@ -3,13 +3,13 @@
   "version": "1.9.0",
   "description": "Nextcloud TypeScript typings",
   "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "typings": "lib/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts"
+      "types": "./lib/index.d.ts"
     },
     "./ocs": {
-      "types": "./dist/ocs.d.ts"
+      "types": "./lib/ocs.d.ts"
     }
   },
   "scripts": {
