@@ -4,12 +4,8 @@ declare namespace Nextcloud.v17 {
         allowDirectoryChooser: boolean
     }
 
-    interface Dialogs {
-        FILEPICKER_TYPE_CHOOSE: number;
-        FILEPICKER_TYPE_MOVE: number;
-        FILEPICKER_TYPE_COPY: number;
-        FILEPICKER_TYPE_COPY_MOVE: number;
-
+    interface Dialogs extends Omit<Nextcloud.v16.OC['dialogs'], 'filepicker'>{
+        // options parameter was added
         filepicker(
             title: string,
             callback: Function,
@@ -18,7 +14,8 @@ declare namespace Nextcloud.v17 {
             modal?: boolean,
             type?: number,
             path?: string,
-            options?: FilePickerOptions): void;
+            options?: FilePickerOptions,
+        ): void;
     }
 
     interface OC extends Nextcloud.v16.OC {
