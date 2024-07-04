@@ -19,6 +19,9 @@ declare namespace Nextcloud.Common {
         FILEPICKER_TYPE_COPY: number;
         FILEPICKER_TYPE_COPY_MOVE: number;
 
+        readonly YES_NO_BUTTONS: number,
+        readonly OK_BUTTONS: number,
+
         filepicker(
             title: string,
             callback: Function,
@@ -26,7 +29,38 @@ declare namespace Nextcloud.Common {
             mimeTypeFilter?: Array<string>,
             modal?: boolean,
             type?: number,
-            path?: string): void;
+            path?: string,
+        ): void;
+
+        /**
+         * Displays confirmation dialog
+         * @param text content of dialog
+         * @param title dialog title
+         * @param callback which will be triggered when user presses OK (true or false would be passed to callback respectively)
+         * @param modal make the dialog modal
+         */
+        confirm(
+            text: string,
+            title: string,
+            callback: (answer: boolean) => void,
+            modal?: boolean,
+        ): Promise<void>;
+
+        /**
+         * Displays confirmation dialog
+         * @param text content of dialog
+         * @param title dialog title
+         * @param buttons text content of buttons
+         * @param callback which will be triggered when user presses OK (true or false would be passed to callback respectively)
+         * @param modal make the dialog modal
+         */
+        confirmDestructive(
+            text: string,
+            title: string,
+            buttons: number | { type: number, confirm: string, cancel: string, confirmClasses: string },
+            callback: (answer: boolean) => void,
+            modal?: boolean,
+        ): Promise<void>;
     }
 
     interface TranslationOptions {
