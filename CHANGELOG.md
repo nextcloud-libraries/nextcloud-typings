@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.9.1 - 2024-07-04
+### Fixed
+* fix: Add missing types for `OCP.Files.Router`
+* fix: Use Typescript source files for types
+* fix: Add missing types for confirmation dialogs
+
 ## 1.9.0 - 2024-06-25
 ### Added
 * feat: Add type information for Nextcloud 29
