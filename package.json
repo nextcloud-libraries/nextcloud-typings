@@ -35,7 +35,7 @@
   "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nextcloud/nextcloud-typings"
+    "url": "https://github.com/nextcloud-libraries/nextcloud-typings"
   },
   "dependencies": {
     "@types/jquery": "3.5.16"
