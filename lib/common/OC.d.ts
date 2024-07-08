@@ -1,5 +1,8 @@
 /// <reference types="jquery" />
-
+/**
+ * SPDX-FileCopyrightText: 2019 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
 declare namespace Nextcloud.Common {
 
     type Nullable<T> = null | T
