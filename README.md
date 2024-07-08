@@ -1,3 +1,7 @@
+<!--
+  - SPDX-FileCopyrightText: 2019 Nextcloud GmbH and Nextcloud contributors
+  - SPDX-License-Identifier: GPL-3.0-or-later
+-->	
 # @nextcloud/typings
 [![NPM package](https://img.shields.io/npm/v/@nextcloud/typings?style=for-the-badge)](https://www.npmjs.com/package/@nextcloud/typings)
 [![License](https://img.shields.io/npm/l/@nextcloud/typings?color=green&style=for-the-badge)](https://github.com/nextcloud/nextcloud-typings/blob/master/LICENSE)

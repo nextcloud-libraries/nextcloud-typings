@@ -1,3 +1,7 @@
+/**
+ * SPDX-FileCopyrightText: 2023 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */	
 declare namespace Nextcloud.v27 {
 	type Dictionary<T> = { [index: string]: T }
 

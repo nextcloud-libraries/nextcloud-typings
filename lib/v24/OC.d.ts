@@ -1,3 +1,7 @@
+/**
+ * SPDX-FileCopyrightText: 2022 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
 declare namespace Nextcloud.v24 {
 
     type FilePickerFilter = (entry: Nextcloud.v19.FileInfo) => boolean
