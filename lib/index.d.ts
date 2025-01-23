@@ -16,3 +16,5 @@
 /// <reference path="v27/OC.d.ts" />
 /// <reference path="v28/OC.d.ts" />
 /// <reference path="v29/OC.d.ts" />
+/// <reference path="v30/OC.d.ts" />
+/// <reference path="v31/OC.d.ts" />
