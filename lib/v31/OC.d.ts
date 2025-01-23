@@ -8,8 +8,16 @@ declare namespace Nextcloud.v31 {
 		// Nothing changed
 	}
 
-	interface OCP extends Nextcloud.v30.OCP {
-		// Nothing changed
+	interface FilesApp {
+		readonly reload: () => Promise<void>
+	}
+
+	interface OCP extends Omit<Nextcloud.v30.OCP, 'Files'> {
+		Files: {
+			App: FilesApp
+			Router: Nextcloud.v28.FilesRouter
+			Navigation: Nextcloud.v28.FilesNavigation
+		}
 	}
 
 	interface WindowWithGlobals extends Nextcloud.v30.WindowWithGlobals {
