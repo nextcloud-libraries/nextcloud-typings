@@ -3,7 +3,9 @@
   "version": "1.9.1",
   "description": "Nextcloud TypeScript typings",
   "keywords": [
-    "nextcloud"
+    "nextcloud",
+    "typescript",
+    "types"
   ],
   "homepage": "https://github.com/nextcloud-libraries/nextcloud-typings#readme",
   "repository": {
