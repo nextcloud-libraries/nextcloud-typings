@@ -33,7 +33,7 @@
     "@types/jquery": "3.5.16"
   },
   "devDependencies": {
-    "@types/node": "^22.15.29",
+    "@types/node": "^24.0.1",
     "babel-jest": "^29.5.0",
     "jest": "^29.7.0",
     "typescript": "^5.8.3"
