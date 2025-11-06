@@ -1,7 +1,7 @@
 /**
  * SPDX-FileCopyrightText: 2025 Nextcloud GmbH and Nextcloud contributors
  * SPDX-License-Identifier: GPL-3.0-or-later
- */	
+ */
 declare namespace Nextcloud.v31 {
 
 	interface OC extends Nextcloud.v30.OC {
