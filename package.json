@@ -29,8 +29,7 @@
     "build": "tsc",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "test": "jest",
-    "test:watch": "jest --watchAll"
+    "ts:check": "tsc --noEmit"
   },
   "dependencies": {
     "@types/jquery": "3.5.16"
@@ -38,9 +37,7 @@
   "devDependencies": {
     "@nextcloud/eslint-config": "^9.0.0-rc.5",
     "@types/node": "^24.0.1",
-    "babel-jest": "^30.2.0",
     "eslint": "^9.39.1",
-    "jest": "^30.0.2",
     "typescript": "^5.8.3"
   },
   "engines": {
