@@ -5,6 +5,7 @@
 		"moduleResolution": "Node",
 		"outDir": "./dist",
 		"strict": true,
+		"skipLibCheck": true,
 		"lib": [
 			"DOM",
 			"ESNext"
