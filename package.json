@@ -1,6 +1,6 @@
 {
   "name": "@nextcloud/typings",
-  "version": "1.9.1",
+  "version": "1.10.0",
   "description": "Nextcloud TypeScript typings",
   "keywords": [
     "nextcloud",
