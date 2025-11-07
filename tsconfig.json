@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"target": "esnext",
 		"declaration": true,
-		"moduleResolution": "Node",
+		"emitDeclarationOnly": true,
 		"outDir": "./dist",
 		"strict": true,
 		"skipLibCheck": true,
@@ -13,5 +13,5 @@
 	},
 	"include": [
 		"lib"
-	],
+	]
 }
