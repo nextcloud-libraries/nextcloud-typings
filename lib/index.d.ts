@@ -18,3 +18,4 @@
 /// <reference path="v29/OC.d.ts" />
 /// <reference path="v30/OC.d.ts" />
 /// <reference path="v31/OC.d.ts" />
+/// <reference path="v32/OC.d.ts" />
