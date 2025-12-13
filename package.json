@@ -23,8 +23,15 @@
       "types": "./lib/ocs.d.ts"
     }
   },
-  "main": "dist/index.js",
   "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "AUTHORS.md",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE",
+    "LICENSES"
+  ],
   "scripts": {
     "build": "tsc",
     "lint": "eslint",
