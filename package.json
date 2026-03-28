@@ -45,7 +45,7 @@
     "@nextcloud/eslint-config": "^9.0.0-rc.5",
     "@types/node": "^25.0.1",
     "eslint": "^10.0.1",
-    "typescript": "^5.8.3"
+    "typescript": "^6.0.2"
   },
   "engines": {
     "node": "^20.0.0 || ^22.0.0 || ^24.0.0"
