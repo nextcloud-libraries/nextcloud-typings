@@ -39,7 +39,7 @@
     "ts:check": "tsc --noEmit"
   },
   "dependencies": {
-    "@types/jquery": "4.0.0"
+    "@types/jquery": "4.0.1"
   },
   "devDependencies": {
     "@nextcloud/eslint-config": "^9.0.0-rc.5",
