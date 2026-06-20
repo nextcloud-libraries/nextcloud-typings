@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@nextcloud/eslint-config": "^9.0.0-rc.5",
-    "@types/node": "^25.0.1",
+    "@types/node": "^26.0.0",
     "eslint": "^10.0.1",
     "typescript": "^5.8.3"
   },
